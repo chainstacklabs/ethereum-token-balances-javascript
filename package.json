@@ -1,8 +1,7 @@
 {
   "name": "ethereum-token-balances",
   "version": "1.0.0",
-  "description": "How to retrieve token balances on Ethereum in bulk",
-  "main": "index.js",
+  "description": "Getting multiple token balances on Ethereum",
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
     "test": "echo \"Error: no test specified\" && exit 1"

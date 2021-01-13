@@ -1,7 +1,7 @@
 const { toBN } = require('web3-utils');
 require('isomorphic-fetch');
 
-const tokenSource = 'https://tokens.coingecko.com/uniswap/all.json'; //coinGeckoApi
+const tokenSource = 'https://tokens.coingecko.com/uniswap/all.json';
 const getTokens = () => {
   return fetch(tokenSource, {
     methods: 'GET',

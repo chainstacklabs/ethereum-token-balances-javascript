@@ -4,7 +4,7 @@ This repository contains code examples on how you can retreive Ethereum tokens i
 
 - GraphQL
 - Etherplex
-- web3.js batch (v2.0.0)
+- BatchRequest
 
 ## Set up your environment
 
@@ -15,19 +15,17 @@ Install the following Node.js packages:
 - [web3](https://www.npmjs.com/package/web3)
 
 In the `constant.js` file, replace the following values to suit your use case:
-
-- `ABI` — contract ABI with only the `balanceOf` function. Remember to add the function calls you’re planning to execute to the ABI constant.
-- `username` — your Geth node basic auth username.
-- `password` — your Geth node basic auth password.
-- `rpcEndpoint` — your Geth node RPC endpoint.
-- `bathEndpoint` — basic auth endpoint.
+- `ABI (Application Binary Interface)` - contract abi with only the `balanceOf` function, remember to add the function calls you're planning to execute to the ABI constant. 
+- `username` — your Ethereum node RPC username.
+- `password` — your Ethereum node RPC password.
+- `rpcEndpoint` — your Ethereum node RPC endpoint.
+- `bathEndpoint` — your Ethereum node RPC endpoint with authentication credentials.
 - `walletAddress` — the account address you want to query.
 
 See also Chainstack Docs: [View node access and credentials](https://docs.chainstack.com/platform/view-node-access-and-credentials).
 
 ## GraphQL
-
-GraphQL is a runtime natively supported by Geth. See also [GraphQL on Ethereum](https://chainstack.com/graphql-on-ethereum-availability-on-chainstack-and-a-quick-rundown/).
+GraphQL is a runtime natively supported by [Go Ethereum client](https://geth.ethereum.org). See also [GraphQL on Ethereum](https://chainstack.com/graphql-on-ethereum-availability-on-chainstack-and-a-quick-rundown/).
 
 Run:
 
@@ -58,7 +56,7 @@ Sample results:
 
 ## Etherplex
 
-[Etherplex](https://github.com/pooltogether/etherplex) is a JavaScript library that makes use of the [multicall](https://etherscan.io/address/0xeefba1e63905ef1d7acba5a8513c70307c1ce441#contracts) smart contract to aggregate function calls and execute them in batches.
+[Etherplex](https://github.com/pooltogether/etherplex) is a JavaScript library that makes use of the [multicall](https://github.com/makerdao/multicall) smart contract to aggregate function calls and execute them in batches.
 
 Run:
 
@@ -87,11 +85,11 @@ Sample results:
 }
 ```
 
-## web3.js (v2.0.0) batch request
+## BatchRequest
 
 [web3.js](https://github.com/ethereum/web3.js/) is a JavaScript library that makes use of the [generic JSON-RPC methods](https://eth.wiki/json-rpc/API).
 
-The batch request aggregates the list of contract function calls and converts them into an array of JSON RPC calls before sending it to the Geth node in one xmlHttpRequest.
+The BatchRequest method aggregates the list of contract function calls and converts them into an array of JSON RPC calls before sending it to the Geth node in one XmlHttpRequest.
 
 Run:
 

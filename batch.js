@@ -1,5 +1,5 @@
 const Web3 = require('web3');
-const { convertToNumber, getTokens } = require('./utils'); // look at helper functions above 
+const { convertToNumber, getTokens } = require('./utils');
 const { abi, bathEndpoint, walletAddress } = require('./constant.js');
 
 const web3 = new Web3(new Web3.providers.HttpProvider(bathEndpoint));
