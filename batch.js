@@ -30,7 +30,7 @@ const main = async () => {
     tokenBalances[name] = `${convertToNumber(_hex, decimals)} ${symbol}`;
   });
 
-  // console.log(tokenBalances);
+  console.log(tokenBalances);
 };
 
 main();
