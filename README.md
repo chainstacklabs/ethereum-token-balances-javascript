@@ -85,11 +85,11 @@ Sample results:
 }
 ```
 
-## BatchRequest
+## web3.js BatchRequest
 
 [web3.js](https://github.com/ethereum/web3.js/) is a JavaScript library that makes use of the [generic JSON-RPC methods](https://eth.wiki/json-rpc/API).
 
-The BatchRequest method aggregates the list of contract function calls and converts them into an array of JSON RPC calls before sending it to the Geth node in one XmlHttpRequest.
+The web3.js `BatchRequest` method aggregates the list of contract function calls and converts them into an array of JSON-RPC calls before sending it to the Ethereum node in one XMLHttpRequest
 
 Run:
 
