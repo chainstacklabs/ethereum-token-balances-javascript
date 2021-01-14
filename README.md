@@ -1,4 +1,4 @@
-# Retrieving token balances on Ethereum in bulk
+# Getting multiple token balances on Ethereum
 
 This repository contains code examples on how you can retreive Ethereum tokens in bulk using:
 
@@ -15,6 +15,7 @@ Install the following Node.js packages:
 - [web3](https://www.npmjs.com/package/web3)
 
 In the `constant.js` file, replace the following values to suit your use case:
+
 - `ABI (Application Binary Interface)` - contract ABI with only the `balanceOf` function, remember to add the function calls you're planning to execute to the ABI constant. 
 - `username` — your Ethereum node RPC username.
 - `password` — your Ethereum node RPC password.
@@ -25,6 +26,7 @@ In the `constant.js` file, replace the following values to suit your use case:
 See also Chainstack Docs: [View node access and credentials](https://docs.chainstack.com/platform/view-node-access-and-credentials).
 
 ## GraphQL
+
 GraphQL is a runtime natively supported by [Go Ethereum client](https://geth.ethereum.org). See also [GraphQL on Ethereum](https://chainstack.com/graphql-on-ethereum-availability-on-chainstack-and-a-quick-rundown/).
 
 Run:
@@ -89,7 +91,7 @@ Sample results:
 
 [web3.js](https://github.com/ethereum/web3.js/) is a JavaScript library that makes use of the [generic JSON-RPC methods](https://eth.wiki/json-rpc/API).
 
-The web3.js `BatchRequest` method aggregates the list of contract function calls and converts them into an array of JSON-RPC calls before sending it to the Ethereum node in one XMLHttpRequest
+The web3.js `BatchRequest` method aggregates the list of contract function calls and converts them into an array of JSON-RPC calls before sending it to the Ethereum node in one XMLHttpRequest.
 
 Run:
 
