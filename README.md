@@ -4,7 +4,7 @@ This repository contains code examples on how you can retreive Ethereum tokens i
 
 - GraphQL
 - Etherplex
-- BatchRequest
+- web3.js BatchRequest
 
 ## Set up your environment
 
@@ -15,7 +15,7 @@ Install the following Node.js packages:
 - [web3](https://www.npmjs.com/package/web3)
 
 In the `constant.js` file, replace the following values to suit your use case:
-- `ABI (Application Binary Interface)` - contract abi with only the `balanceOf` function, remember to add the function calls you're planning to execute to the ABI constant. 
+- `ABI (Application Binary Interface)` - contract ABI with only the `balanceOf` function, remember to add the function calls you're planning to execute to the ABI constant. 
 - `username` — your Ethereum node RPC username.
 - `password` — your Ethereum node RPC password.
 - `rpcEndpoint` — your Ethereum node RPC endpoint.
