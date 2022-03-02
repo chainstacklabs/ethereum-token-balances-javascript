@@ -1,5 +1,15 @@
+// Get the following from your Chainstack console
+// Check https://docs.chainstack.com/platform/view-node-access-and-credentials#public-chain-nodes
+
+const username = 'username' // replace with your Ethereum node RPC username
+const password = 'password' // replace with your Ethereum node RPC password
+const rpcEndpoint = 'https://your-chainstack-password-protected-endpoint.com' // replace with your Ethereum node RPC endpoint
+const bathEndpoint = `https://${username}:${password}@your-chainstack-password-protected-endpoint.com` // replace with your Ethereum node RPC endpoint
+// replace with the address you want to query
+const walletAddress = '0x1234512345123451234512345'
+
 const abi = [
- {
+  {
     constant: true,
     inputs: [
       {
@@ -18,13 +28,7 @@ const abi = [
     stateMutability: 'view',
     type: 'function',
   },
-];
-
-const username = 'username'; // replace with your Ethereum node RPC username
-const password = 'password'; // replace with your Ethereum node RPC password
-const rpcEndpoint = 'https://nd-123-456-789.p2pify.com'; // replace with your Ethereum node RPC endpoint
-const bathEndpoint = `https://${username}:${password}@nd-123-456-789.p2pify.com`; // replace with your Ethereum node RPC endpoint
-const walletAddress = '0x3f5ce5fbfe3e9af3971dd833d26ba9b5c936f0be'; // replace with the address you want to query
+]
 
 module.exports = {
   abi,
@@ -33,4 +37,4 @@ module.exports = {
   rpcEndpoint,
   username,
   walletAddress,
-};
+}

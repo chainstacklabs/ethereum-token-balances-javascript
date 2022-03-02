@@ -14,14 +14,14 @@ Install the following Node.js packages:
 - [ethers](https://www.npmjs.com/package/ethers)
 - [web3](https://www.npmjs.com/package/web3)
 
-In the `constant.js` file, replace the following values to suit your use case:
+**IMPORTANT:** In the `constant.js` file, replace the following values to suit your use case:
 
-- `ABI (Application Binary Interface)` - contract ABI with only the `balanceOf` function, remember to add the function calls you're planning to execute to the ABI constant. 
 - `username` — your Ethereum node RPC username.
 - `password` — your Ethereum node RPC password.
 - `rpcEndpoint` — your Ethereum node RPC endpoint.
 - `bathEndpoint` — your Ethereum node RPC endpoint with authentication credentials.
 - `walletAddress` — the account address you want to query.
+- `ABI (Application Binary Interface)` - contract ABI with only the `balanceOf` function, remember to add the function calls you're planning to execute to the ABI constant.
 
 See also Chainstack Docs: [View node access and credentials](https://docs.chainstack.com/platform/view-node-access-and-credentials).
 
