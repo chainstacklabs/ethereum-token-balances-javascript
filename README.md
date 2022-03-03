@@ -23,6 +23,14 @@ Install the following Node.js packages:
 - `walletAddress` — the account address you want to query.
 - `ABI (Application Binary Interface)` - contract ABI with only the `balanceOf` function, remember to add the function calls you're planning to execute to the ABI constant.
 
+Or create an .env file with the following variables:
+
+- USER_ADDRESS=
+- BLOCK_NUMBER=
+- PASSWORD_PROTECTED_ENDPOINT=
+- USERNAME=
+- PASSWORD=
+
 See also Chainstack Docs: [View node access and credentials](https://docs.chainstack.com/platform/view-node-access-and-credentials).
 
 ## GraphQL
