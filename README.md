@@ -1,4 +1,27 @@
-# Getting multiple token balances on Ethereum
+<img width="1200" alt="Labs" src="https://user-images.githubusercontent.com/99700157/213291931-5a822628-5b8a-4768-980d-65f324985d32.png">
+
+<p>
+ <h3 align="center">Chainstack is the leading suite of services connecting developers with Web3 infrastructure</h3>
+</p>
+
+<p align="center">
+  <a target="_blank" href="https://chainstack.com/build-better-with-ethereum/"><img src="https://github.com/soos3d/blockchain-badges/blob/main/protocols_badges/Ethereum.svg" /></a>&nbsp;  
+  <a target="_blank" href="https://chainstack.com/build-better-with-bnb-smart-chain/"><img src="https://github.com/soos3d/blockchain-badges/blob/main/protocols_badges/BNB.svg" /></a>&nbsp;
+  <a target="_blank" href="https://chainstack.com/build-better-with-polygon/"><img src="https://github.com/soos3d/blockchain-badges/blob/main/protocols_badges/Polygon.svg" /></a>&nbsp;
+  <a target="_blank" href="https://chainstack.com/build-better-with-avalanche/"><img src="https://github.com/soos3d/blockchain-badges/blob/main/protocols_badges/Avalanche.svg" /></a>&nbsp;
+  <a target="_blank" href="https://chainstack.com/build-better-with-fantom/"><img src="https://github.com/soos3d/blockchain-badges/blob/main/protocols_badges/Fantom.svg" /></a>&nbsp;
+</p>
+
+<p align="center">
+  • <a target="_blank" href="https://chainstack.com/">Homepage</a> •
+  <a target="_blank" href="https://chainstack.com/protocols/">Supported protocols</a> •
+  <a target="_blank" href="https://chainstack.com/blog/">Chainstack blog</a> •
+  <a target="_blank" href="https://docs.chainstack.com/quickstart/">Chainstack docs</a> •
+  <a target="_blank" href="https://docs.chainstack.com/quickstart/">Blockchain API reference</a> •
+  <a target="_blank" href="https://console.chainstack.com/user/account/create">Start for free</a> •
+</p>
+
+# Retrieve multiple token balances on Ethereum
 
 This repository contains code examples on how you can retreive Ethereum tokens in bulk using:
 
@@ -6,15 +29,23 @@ This repository contains code examples on how you can retreive Ethereum tokens i
 - Etherplex
 - web3.js BatchRequest
 
-## Set up your environment
+## Quick start
 
-Install the following Node.js packages:
+Clone the repository:
 
-- [isomorphic-fetch](https://www.npmjs.com/package/isomorphic-fetch)
-- [ethers](https://www.npmjs.com/package/ethers)
-- [web3](https://www.npmjs.com/package/web3)
+```sh
+git clone https://github.com/chainstack/ethereum-token-balances.git
+```
 
-**IMPORTANT:** In the `constant.js` file, replace the following values to suit your use case:
+Install  dependencies:
+
+```sh
+npm ci
+```
+
+> Use `npm ci` to launch a `clean install` of the dependencies, this will install the same version as in the `package.json` file.
+
+Replace the following values in the `constant.js` file to suit your use case:
 
 - `username` — your Ethereum node RPC username.
 - `password` — your Ethereum node RPC password.
@@ -23,7 +54,7 @@ Install the following Node.js packages:
 - `walletAddress` — the account address you want to query.
 - `ABI (Application Binary Interface)` - contract ABI with only the `balanceOf` function, remember to add the function calls you're planning to execute to the ABI constant.
 
-See also Chainstack Docs: [View node access and credentials](https://docs.chainstack.com/platform/view-node-access-and-credentials).
+Then:
 
 ## GraphQL
 
@@ -119,3 +150,38 @@ Sample results:
   ...
 }
 ```
+
+## Prerequisites
+
+* Node.js: ^16.17.0— [install Node](https://nodejs.org/en/download/)
+* A node RPC endpoint.
+
+Deploy a node with Chainstack:
+
+1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create).  
+1. [Deploy a node](https://docs.chainstack.com/platform/join-a-public-network).  
+1. [View node access and credentials](https://docs.chainstack.com/platform/view-node-access-and-credentials).
+
+## Dependencies
+
+* @pooltogether/etherplex: ^0.2.3
+* ethers: ^4.0.39
+* isomorphic-fetch: ^3.0.0
+* web3: ^2.0.0-alpha.1
+* web3-eth-abi: ^2.0.0-alpha.1
+
+## Install
+
+Clone the repository:
+
+```sh
+git clone https://github.com/chainstack/ethereum-token-balances.git
+```
+
+Install  dependencies:
+
+```sh
+npm ci
+```
+
+> Use `npm ci` to launch a `clean install` of the dependencies, this will install the same version as in the `package.json` file.
