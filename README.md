@@ -23,7 +23,7 @@
 
 # Retrieve multiple token balances on Ethereum
 
-This repository contains code examples on how you can retreive Ethereum tokens in bulk using:
+This repository contains code examples on how you can retrieve Ethereum tokens in bulk using:
 
 - GraphQL
 - Etherplex
