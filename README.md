@@ -161,27 +161,3 @@ Deploy a node with Chainstack:
 1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create).  
 1. [Deploy a node](https://docs.chainstack.com/platform/join-a-public-network).  
 1. [View node access and credentials](https://docs.chainstack.com/platform/view-node-access-and-credentials).
-
-## Dependencies
-
-* @pooltogether/etherplex: ^0.2.3
-* ethers: ^4.0.39
-* isomorphic-fetch: ^3.0.0
-* web3: ^2.0.0-alpha.1
-* web3-eth-abi: ^2.0.0-alpha.1
-
-## Install
-
-Clone the repository:
-
-```sh
-git clone https://github.com/chainstack/ethereum-token-balances.git
-```
-
-Install  dependencies:
-
-```sh
-npm ci
-```
-
-> Use `npm ci` to launch a `clean install` of the dependencies, this will install the same version as in the `package.json` file.
