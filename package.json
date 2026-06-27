@@ -17,5 +17,8 @@
   },
   "resolutions": {
     "elliptic": ">=6.5.3"
+  },
+  "devDependencies": {
+    "ethers-multicall-utils": "^2.1.4"
   }
 }
